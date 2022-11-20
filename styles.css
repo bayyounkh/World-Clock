@@ -10,13 +10,21 @@ h1 {
     font-size:40px;
 }
 .container {
-    max-width: 500px;
+    max-width: 600px;
     border: 1px solid rgba(85, 26, 139, 0.9);
     border-radius: 10px;
     margin: 50px 150px;
     padding: 30px;
 
+
 }
+select {
+     display: block;
+     margin: 0 auto;
+     padding: 10px 100px;
+     background-color: #151318;
+     color: white
+    }
 .city {
     display: flex;
     margin: 10px 0;
@@ -31,6 +39,7 @@ h1 {
 }
 .date {
 opacity: 0.8;
+padding: 40px;
 }
 .time {
 font-size: 42px;
@@ -38,4 +47,5 @@ font-size: 42px;
 footer {
     text-align: center;
     font-size: 12px;
+    margin-bottom: 30px;
 }
