@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data-1970-2030.min.js" integrity="sha512-USbNHZ6+U0ze1qkbNXknupfkzE2vzU5RGsf2J8Vb5ufnekgtQpcK5T737su1rhVHL2gHBGjMx++k/I5VTl/e+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="container">
@@ -15,23 +17,23 @@
         <option value="">Select a City...</option>
         <option value="">Berlin</option>
         <option value="">London</option>
-        <option value="">New York</option>
+        <option value="">Boston</option>
         <option value="">Ankara</option>
-        <option value="">Damascus</option>
+        <option value="">Aleppo</option>
     </select>
 
-    <div class="city">
+    <div class="city" id="hamburg">
         <h2>Hamburg 🇩🇪</h2>
         <div class="date">Nov 18th 2022</div>
         <div class="time">10:19 </div>
     </div>
-    <div class="city">
-        <h2>Boston 🇺🇸</h2>
+    <div class="city" id="new-york">
+        <h2>New York 🇺🇸</h2>
         <div class="date">Nov 18th 2022</div>
         <div class="time">03:19 </div>
     </div>
-    <div class="city">
-        <h2>Aleppo 🇸🇾</h2>
+    <div class="city" id="damascus">
+        <h2>Damascus 🇸🇾</h2>
         <div class="date">Nov 18th 2022</div>
         <div class="time">12:19 </div>
     </div>
