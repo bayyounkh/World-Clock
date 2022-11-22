@@ -43,12 +43,14 @@ function addCity(event) {
 function getCurrentLocation(event) {
     let location = moment.tz.guess().split('/')[1];
 
-    currentLocation.innerHTML = `${location} ${
-      moment().format('HH:mm:ss')}
+    currentLocation.innerHTML = `${location}: ${moment().format(
+      'MMMM Do YYYY')}<br> ${moment().format('HH:mm:ss')}
     `;
 }
 let currentLocation = document.querySelector('#location');
-currentLocation.addEventListener("click", getCurrentLocation)
+currentLocation.addEventListener("click", getCurrentLocation);
+// getCurrentLocation();
+// setInterval(getCurrentLocation, 1000);
 
 updateCurrentTime();
 setInterval(updateCurrentTime, 1000);

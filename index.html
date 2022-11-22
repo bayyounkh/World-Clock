@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
 
-    <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data-1970-2030.min.js" integrity="sha512-USbNHZ6+U0ze1qkbNXknupfkzE2vzU5RGsf2J8Vb5ufnekgtQpcK5T737su1rhVHL2gHBGjMx++k/I5VTl/e+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-<body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data-1970-2030.min.js"
+      integrity="sha512-USbNHZ6+U0ze1qkbNXknupfkzE2vzU5RGsf2J8Vb5ufnekgtQpcK5T737su1rhVHL2gHBGjMx++k/I5VTl/e+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-    <h1>World Clock</h1>
+      <h1>World Clock</h1>
 
-    <select id="city">
+      <select id="city">
         <option value="">Select a City...</option>
         <option value="Asia/Kuala_Lumpur">Kuala Lumpur</option>
         <option value="Europe/London">London</option>
         <option value="Asia/Dubai">Dubai</option>
         <option value="Asia/Istanbul">Istanbul</option>
         <option value="Indian/Maldives">Maldives Islands</option>
-    </select>
-    <button id="location" type="button" >My Location <i class="fa-solid fa-magnifying-glass-location"></i> </button>
-    <div id="cities">
-    <div class="city" id="hamburg">
-        <h2>Hamburg 🇩🇪</h2>
-        <div class="date">Nov 18th 2022</div>
-        <div class="time">10:19 </div>
+      </select>
+
+      <button id="location" type="button">📍 My Location</button>
+
+      <div id="cities">
+        <div class="city" id="hamburg">
+            <div>
+          <h2>Hamburg 🇩🇪</h2>
+          <div class="date">Nov 18th 2022</div>
+          </div>
+          <div class="time">10:19</div>
+        </div>
+        <div class="city" id="new-york">
+        <div>
+          <h2>New York 🇺🇸</h2>
+          <div class="date">Nov 18th 2022</div>
+        </div>
+          <div class="time">03:19</div>
+        </div>
+        <div class="city" id="damascus">
+        <div>
+          <h2>Damascus 🇸🇾</h2>
+          <div class="date">Nov 18th 2022</div>
+           </div>
+          <div class="time">12:19</div>
+
+        </div>
+      </div>
+
+      <button id="home" type="button"><a href="index.html">🏠 Home</a></button>
     </div>
-    <div class="city" id="new-york">
-        <h2>New York 🇺🇸</h2>
-        <div class="date">Nov 18th 2022</div>
-        <div class="time">03:19 </div>
-    </div>
-    <div class="city" id="damascus">
-        <h2>Damascus 🇸🇾</h2>
-        <div class="date">Nov 18th 2022</div>
-        <div class="time">12:19 </div>
-    </div>
-    </div>
-</div>
-    <footer>👩🏼‍💻 with 💗 by Bayan Khatib and is <a href="https://github.com/bayyounkh/World-Clock" target="_blank">open-sourced on Github</a></footer>
+    <footer>
+      👩🏼‍💻 with 💗 by Bayan Khatib and is
+      <a href="https://github.com/bayyounkh/World-Clock" target="_blank"
+        >open-sourced on Github</a
+      >
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
