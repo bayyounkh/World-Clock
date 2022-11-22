@@ -13,6 +13,7 @@ h1 {
     max-width: 600px;
     border: 1px solid rgba(85, 26, 139, 0.9);
     border-radius: 10px;
+    box-shadow: #551D8B 5px 18px 20px 4px;
     margin: 50px 150px;
     padding: 30px;
 
@@ -23,7 +24,9 @@ select {
      margin: 0 auto;
      padding: 10px 100px;
      background-color: #151318;
-     color: white
+     color: white;
+     border: 1px solid #551D8B;
+     border-radius: 10px;
     }
 .city {
     display: flex;
@@ -44,6 +47,23 @@ padding: 40px;
 .time {
 font-size: 42px;
 }
+#location {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    background: #151318;
+    color: white;
+    border: 1px solid #551D8B;
+    border-radius: 10px;
+    box-shadow: #551D8B 0px 2px 5px 0px;
+    cursor: pointer;
+}
+
+#location:hover {
+    color: white;
+    background: #151318;
+}
+
 footer {
     text-align: center;
     font-size: 12px;

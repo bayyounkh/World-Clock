@@ -31,7 +31,6 @@ function addCity(event) {
     let cityName = cityTimeZone.replace('_', ' ').split('/')[1];
     let cityTime = moment().tz(cityTimeZone);
     let cities = document.querySelector("#cities");
-
     cities.innerHTML = `<div class='city'>
     <div>
     <h2>${cityName}</h2>
@@ -41,11 +40,18 @@ function addCity(event) {
     </div>`;
 
 }
+function getCurrentLocation(event) {
+    let location = moment.tz.guess().split('/')[1];
+
+    currentLocation.innerHTML = `${location} ${
+      moment().format('HH:mm:ss')}
+    `;
+}
+let currentLocation = document.querySelector('#location');
+currentLocation.addEventListener("click", getCurrentLocation)
 
 updateCurrentTime();
 setInterval(updateCurrentTime, 1000);
 
 let citiesSelect = document.querySelector("#city");
 citiesSelect.addEventListener("change", addCity);
-addCity();
-setInterval(addCity, 1000);
